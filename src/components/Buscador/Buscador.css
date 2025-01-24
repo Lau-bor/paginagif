@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+.form-buscador{
+    padding: 20px;
+    text-align: center;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-buscador label{
+    font-size: 40px;
+    font-family: 'Jersey 15', sans-serif;
+    color: white;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.buscador {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    font-family: 'Jersey 15', sans-serif, 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    caret-color: blue;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 20%;
+    height: 50px; 
+}
+
+.buscador:focus-visible {
+    outline: none;
+}
+
+.input-container button {
+    background-color: #eb3c3c;
+    color: white;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    height: 50px; 
+    padding: 0 20px; 
+    transition: all .5s ease-in-out;
+}
+
+.input-container button:hover {
+    background-color: #288ada;
+}
+
+/* MediaQuery para pantallas medianas */
+@media (max-width: 768px) {
+    .buscador {
+        width: 50%;
+    }
+}
+
+/* MediaQuery para pantallas pequeñas */
+@media (max-width: 480px) {
+    .buscador {
+        width: 70%;
+    }
+}
